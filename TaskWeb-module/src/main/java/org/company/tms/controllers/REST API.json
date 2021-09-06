@@ -1,0 +1,92 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Sample API",
+    "description": "API description in Markdown.",
+    "version": "1.0.0"
+  },
+  "host": "localhost:8080",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/tasks": {
+      "get": {
+        "summary": "Returns a list of users with there task name and how much time has been spent on a task.",
+        "description": "Optional extended description in Markdown.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "paths": {
+    "/tasks/{id}": {
+      "get": {
+        "summary": "Returns a specific user by there ID with there task name and how much time has been spent on a task.",
+        "description": "Returns a specific user by there ID",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "paths": {
+    "/tasks/{id}": {
+      "delete": {
+        "summary": "Deletes a specific user by there ID with all of they're containing information",
+        "description": "Deletes a specific user by there ID",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "paths": {
+    "/tasks": {
+      "post": {
+        "summary": "Creates a Task",
+        "description": "Creates a Task with an auto-generated ID with specified information by the user",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "paths": {
+    "/tasks/{id}": {
+      "put": {
+        "summary": "Updates a Task",
+        "description": "By taking the url specified ID, that ID's information can be updated that is title, worker name and time spent",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
